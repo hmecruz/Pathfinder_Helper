@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-7dp" /> <!-- Adjust the percentage as needed -->
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6C0909"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Btool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_border"
+            android:text="tool"
+            android:textColor="#ffffff"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <Button
+            android:id="@+id/Buser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_border"
+            android:text="user"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Five buttons in the BottomNavigationView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6C0909"
+            android:orientation="horizontal">
+
+            <!-- Square buttons with borders -->
+            <Button
+                android:id="@+id/B1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/square_border"
+                android:text="B1"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/B2"
+                android:layout_width="0dp"
+                android:layout_height="77dp"
+                android:layout_weight="1"
+                android:background="@drawable/square_border"
+                android:text="B2"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/B3"
+                android:layout_width="0dp"
+                android:layout_height="77dp"
+                android:layout_weight="1"
+                android:background="@drawable/square_border"
+                android:text="B3"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/B4"
+                android:layout_width="0dp"
+                android:layout_height="77dp"
+                android:layout_weight="1"
+                android:background="@drawable/square_border"
+                android:text="B4"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/B5"
+                android:layout_width="0dp"
+                android:layout_height="77dp"
+                android:layout_weight="1"
+                android:background="@drawable/square_border"
+                android:text="B5"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
