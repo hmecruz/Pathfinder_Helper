@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.app"
+    namespace = "com.pathfinder_helper.app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.app"
+        applicationId = "com.pathfinder_helper.app"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

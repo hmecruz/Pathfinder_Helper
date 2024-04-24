@@ -5,56 +5,79 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5C5252"
+    android:foregroundTint="#9A1212"
     android:visibility="visible"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="-7dp" /> <!-- Adjust the percentage as needed -->
 
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#6C0909"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:contentInsetEnd="0dp"
-        app:contentInsetStart="0dp"
-        app:contentInsetStartWithNavigation="0dp"
+    <Button
+        android:id="@+id/ButtonMenu"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableLeft="@drawable/user_icon"
+        android:gravity="end"
+        android:scaleType="fitCenter"
+        android:text="User"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/ButtonUser"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableLeft="@drawable/user_icon"
+        android:gravity="end"
+        android:scaleType="fitCenter"
+        android:text="User"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="416dp"
+        android:layout_height="453dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        tools:layout_editor_absoluteX="0dp">
 
         <Button
-            android:id="@+id/Btool"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/square_border"
-            android:text="tool"
-            android:textColor="#ffffff"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="8dp" />
+            android:layout_marginTop="10dp">
+        </Button>
 
         <Button
-            android:id="@+id/Buser"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/square_border"
-            android:text="user"
-            android:textColor="#ffffff"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="8dp" />
+            android:layout_marginTop="10dp">
+        </Button>
 
-    </androidx.appcompat.widget.Toolbar>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+        </Button>
+
+    </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -63,65 +86,57 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#6C0909"
             android:orientation="horizontal">
+
 
             <!-- Square buttons with borders -->
             <Button
-                android:id="@+id/B1"
+                android:id="@+id/LoreButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/square_border"
-                android:text="B1"
+                android:text="Lore"
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/B2"
+                android:id="@+id/SpellsButton"
                 android:layout_width="0dp"
-                android:layout_height="77dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/square_border"
-                android:text="B2"
+                android:text="Spells"
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/B3"
+                android:id="@+id/ItemsButton"
                 android:layout_width="0dp"
-                android:layout_height="77dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/square_border"
-                android:text="B3"
+                android:text="Items"
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/B4"
+                android:id="@+id/CharacterButton"
                 android:layout_width="0dp"
-                android:layout_height="77dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/square_border"
-                android:text="B4"
+                android:text="Character"
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/B5"
+                android:id="@+id/CampaignButton"
                 android:layout_width="0dp"
-                android:layout_height="77dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:drawableLeft="@drawable/group_icon"
                 android:background="@drawable/square_border"
-                android:text="B5"
                 android:textColor="#ffffff" />
 
         </LinearLayout>
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+</com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
