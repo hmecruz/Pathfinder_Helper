@@ -13,33 +13,23 @@
 
     <Button
         android:id="@+id/ButtonMenu"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:backgroundTint="#00FFFFFF"
-        android:drawableRight="@drawable/user_icon"
+        android:drawableTop="@drawable/icon_menu"
         android:gravity="center_horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"> <!-- centraliza verticalmente o texto e o ícone -->
     </Button>
 
-    <Button
-        android:id="@+id/ButtonUser"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableRight="@drawable/user_icon"
-        android:gravity="center_horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"> <!-- centraliza verticalmente o texto e o ícone -->
-    </Button>
-
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="416dp"
+        android:layout_width="match_parent"
         android:layout_height="453dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:layout_width="match_parent"
@@ -67,70 +57,57 @@
 
     </LinearLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
+        <!-- Five buttons in the BottomNavigationView -->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#9A1212"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <!-- Five buttons in the BottomNavigationView -->
-        <LinearLayout
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/LoreButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_add" />
 
+        <Button
+            android:id="@+id/SpellsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_add"
+            style="?android:attr/buttonBarButtonStyle" />
 
-            <!-- Square buttons with borders -->
-            <Button
-                android:id="@+id/LoreButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/square_border"
-                android:text="Lore"
-                android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/ItemsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_add"
+            style="?android:attr/buttonBarButtonStyle" />
 
-            <Button
-                android:id="@+id/SpellsButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/square_border"
-                android:text="Spells"
-                android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/CharacterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_add"
+            style="?android:attr/buttonBarButtonStyle" />
 
-            <Button
-                android:id="@+id/ItemsButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/square_border"
-                android:text="Items"
-                android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/CampaignButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_group"
+            style="?android:attr/buttonBarButtonStyle" />
 
-            <Button
-                android:id="@+id/CharacterButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/square_border"
-                android:text="Character"
-                android:textColor="#ffffff" />
-
-            <Button
-                android:id="@+id/CampaignButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:drawableLeft="@drawable/group_icon"
-                android:background="@drawable/square_border"
-                android:textColor="#ffffff" />
-
-        </LinearLayout>
-
-</com.google.android.material.bottomnavigation.BottomNavigationView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
