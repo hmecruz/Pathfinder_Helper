@@ -6,108 +6,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#5C5252"
-    android:foregroundTint="#9A1212"
-    android:visibility="visible"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/ButtonMenu"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableTop="@drawable/icon_menu"
-        android:gravity="center_horizontal"
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"> <!-- centraliza verticalmente o texto e o ícone -->
-    </Button>
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/ButtonMenu"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#00FFFFFF"
+            android:drawableTop="@drawable/icon_menu"
+            android:gravity="center_horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </Toolbar>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="453dp"
+        android:layout_height="436dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintBottom_toTopOf="@+id/navbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-        </Button>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-        </Button>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-        </Button>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-        </Button>
-
     </LinearLayout>
 
-        <!-- Five buttons in the BottomNavigationView -->
-    <LinearLayout
-        android:id="@+id/linearLayout3"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbar"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:background="#9A1212"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navbar_menu" />
 
-        <Button
-            android:id="@+id/LoreButton"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/icon_add" />
-
-        <Button
-            android:id="@+id/SpellsButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/icon_add"
-            style="?android:attr/buttonBarButtonStyle" />
-
-        <Button
-            android:id="@+id/ItemsButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/icon_add"
-            style="?android:attr/buttonBarButtonStyle" />
-
-        <Button
-            android:id="@+id/CharacterButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/icon_add"
-            style="?android:attr/buttonBarButtonStyle" />
-
-        <Button
-            android:id="@+id/CampaignButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/icon_group"
-            style="?android:attr/buttonBarButtonStyle" />
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

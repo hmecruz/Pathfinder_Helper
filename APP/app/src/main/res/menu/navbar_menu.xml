@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title=""
+        android:id="@+id/Lore"
+        android:icon="@drawable/icon_add" />
+
+    <item android:title=""
+        android:id="@+id/Spells"
+        android:icon="@drawable/icon_add" />
+
+    <item android:title=""
+        android:id="@+id/Items"
+        android:icon="@drawable/icon_add" />
+
+    <item android:title=""
+        android:id="@+id/Character"
+        android:icon="@drawable/icon_add" />
+
+    <item android:title=""
+        android:id="@+id/Campaign"
+        android:icon="@drawable/icon_group" />
+</menu>
