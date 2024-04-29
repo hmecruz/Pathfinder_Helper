@@ -5,6 +5,6 @@
     <string name="item">Item</string>
     <string name="character">Character</string>
     <string name="camp">Campaign</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
 </resources>
