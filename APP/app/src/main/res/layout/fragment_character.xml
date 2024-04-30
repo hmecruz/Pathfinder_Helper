@@ -14,7 +14,20 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:icon="@drawable/icon_add"
+            android:backgroundTint="#9A1212"
+            android:text="New character"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#9A1212"
+            android:text="Leonidas"
+            android:textColor="#FFFFFF"/>
+
 
     </LinearLayout>
 

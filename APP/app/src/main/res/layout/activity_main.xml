@@ -26,12 +26,13 @@
 
         <LinearLayout
             android:id="@+id/linearLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="436dp"
+            android:layout_width="404dp"
+            android:layout_height="616dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toTopOf="@+id/navbar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView">
 
         </LinearLayout>
 
@@ -45,6 +46,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/navbar_menu" />
 
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="413dp"
+            android:layout_height="135dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:layout_editor_absoluteX="1dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -52,6 +61,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="#5C5252"
+        app:subheaderColor="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
         app:headerLayout="@layout/header_drawer"
         app:menu="@menu/drawer_menu"/>
 
