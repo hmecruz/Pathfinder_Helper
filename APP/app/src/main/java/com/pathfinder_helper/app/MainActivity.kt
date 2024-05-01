@@ -1,6 +1,7 @@
 package com.pathfinder_helper.app
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -8,6 +9,10 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 import com.pathfinder_helper.app.databinding.ActivityMainBinding
+
+import android.app.Dialog
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.DialogFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -55,6 +60,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
     }
 
     private fun replaceFragment(fragment: Fragment) {
@@ -70,5 +76,39 @@ class MainActivity : AppCompatActivity() {
                         or android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                         or android.view.View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                         or android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
+    }
+}
+class MyDialogFragment : DialogFragment() {
+
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        // Create a dialog builder
+        val builder = AlertDialog.Builder(requireContext())
+
+        // Inflate the custom layout for the dialog
+        val inflater = requireActivity().layoutInflater
+        val view = inflater.inflate(R.layout.popup_new_campaign, null)
+
+        // Find buttons in the custom layout
+        val okButton: Button = view.findViewById(R.id.new_campaign_confirm)
+        val cancelButton: Button = view.findViewById(R.id.new_campaign_cancel)
+
+        // Set click listeners for the buttons
+        okButton.setOnClickListener {
+            // Handle OK button click
+            // For example, you can dismiss the dialog
+            dismiss()
+        }
+
+        cancelButton.setOnClickListener {
+            // Handle Cancel button click
+            // For example, you can dismiss the dialog
+            dismiss()
+        }
+
+        // Set the custom view to the dialog builder
+        builder.setView(view)
+
+        // Create and return the AlertDialog instance
+        return builder.create()
     }
 }

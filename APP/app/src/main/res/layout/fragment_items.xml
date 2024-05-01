@@ -9,35 +9,40 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="436dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:backgroundTint="#9A1212">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Wepon"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Armor"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Potion"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Misc"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
 
     </LinearLayout>
 

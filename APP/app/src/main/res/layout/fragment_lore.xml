@@ -16,28 +16,32 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Classe"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Race"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Ambient"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Monsters"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
 
     </LinearLayout>
 
