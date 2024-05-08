@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                         or android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
     }
 }
-class MyDialogFragment : DialogFragment() {
+class MyDialogFragmentCampaign : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         // Create a dialog builder
@@ -91,6 +91,41 @@ class MyDialogFragment : DialogFragment() {
         // Find buttons in the custom layout
         val okButton: Button = view.findViewById(R.id.new_campaign_confirm)
         val cancelButton: Button = view.findViewById(R.id.new_campaign_cancel)
+
+        // Set click listeners for the buttons
+        okButton.setOnClickListener {
+            // Handle OK button click
+            // For example, you can dismiss the dialog
+            dismiss()
+        }
+
+        cancelButton.setOnClickListener {
+            // Handle Cancel button click
+            // For example, you can dismiss the dialog
+            dismiss()
+        }
+
+        // Set the custom view to the dialog builder
+        builder.setView(view)
+
+        // Create and return the AlertDialog instance
+        return builder.create()
+    }
+}
+
+class MyDialogFragmentCharacetr : DialogFragment() {
+
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        // Create a dialog builder
+        val builder = AlertDialog.Builder(requireContext())
+
+        // Inflate the custom layout for the dialog
+        val inflater = requireActivity().layoutInflater
+        val view = inflater.inflate(R.layout.popup_new_charcter, null)
+
+        // Find buttons in the custom layout
+        val okButton: Button = view.findViewById(R.id.new_charcter_confirm)
+        val cancelButton: Button = view.findViewById(R.id.new_charcter_cancel)
 
         // Set click listeners for the buttons
         okButton.setOnClickListener {

@@ -36,8 +36,8 @@ class Campiagn : Fragment() {
         // Set up button click listener
         binding.newCampaignButton.setOnClickListener {
             // Show the pop-up dialog
-            val dialogFragment = MyDialogFragment()
-            dialogFragment.show(parentFragmentManager, "MyDialogFragment")
+            val dialogFragment = MyDialogFragmentCampaign()
+            dialogFragment.show(parentFragmentManager, "MyDialogFragmentCampaign")
         }
 
         return view

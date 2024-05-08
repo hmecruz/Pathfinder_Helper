@@ -15,7 +15,7 @@
 
     <item android:title=""
         android:id="@+id/Character"
-        android:icon="@drawable/icon_add" />
+        android:icon="@drawable/icon_character" />
 
     <item android:title=""
         android:id="@+id/Campaign"
