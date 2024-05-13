@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".spells">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="436dp"
+        android:orientation="vertical"
+        android:backgroundTint="#9A1212">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Level 1"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Level 2"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Level 3"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" Level 4"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" Level 5"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9A1212"/>
+
+    </LinearLayout>
+
+</FrameLayout>

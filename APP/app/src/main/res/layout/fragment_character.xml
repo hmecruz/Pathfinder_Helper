@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Character">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="436dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/newcharcterbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:icon="@drawable/icon_add"
+            android:backgroundTint="#9A1212"
+            android:text="New character"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#9A1212"
+            android:text="Leonidas"
+            android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

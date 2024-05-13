@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bookmarked"
+            android:title="Bookmarked"
+            android:icon="@drawable/baseline_bookmark_24"/>
+
+        <item
+            android:id="@+id/nav_confi"
+            android:title="Configurations"
+            android:icon="@drawable/icon_add"/>
+    </group>
+
+
+        <item
+            android:title="Profile" >
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Profile"
+                    android:icon="@drawable/icon_add"/>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout"
+                    android:icon="@drawable/icon_add"/>
+                </group>
+            </menu>
+        </item>
+
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share"
+                android:icon="@drawable/icon_add"/>
+            <item
+                android:id="@+id/nav_Rate"
+                android:title="Rate"
+                android:icon="@drawable/icon_add"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pathfinder_Helper</string>
+    <string name="lore">Lore</string>
+    <string name="spell">Spell</string>
+    <string name="item">Item</string>
+    <string name="character">Character</string>
+    <string name="camp">Campaign</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+</resources>
