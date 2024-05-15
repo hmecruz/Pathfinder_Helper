@@ -46,14 +46,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/navbar_menu" />
 
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="413dp"
-            android:layout_height="135dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            tools:layout_editor_absoluteX="1dp" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

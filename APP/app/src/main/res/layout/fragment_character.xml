@@ -1,35 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Character">
+    android:orientation="vertical"
+    tools:context=".Campaign">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
+
+    <!-- SearchView to search every existing campaign -->
+    <android.widget.SearchView
+        android:id="@+id/searchView"
         android:layout_width="match_parent"
-        android:layout_height="436dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/searchview_background"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="Search Character" />
 
-        <Button
-            android:id="@+id/newcharcterbutton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:icon="@drawable/icon_add"
-            android:backgroundTint="#9A1212"
-            android:text="New character"
-            android:textColor="#FFFFFF"/>
+    <!-- Button for creating new campaign -->
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#9A1212"
-            android:text="Leonidas"
-            android:textColor="#FFFFFF"/>
+    <!-- ListView for listing every existing campaign -->
+    <Button
+        android:id="@+id/newCharacterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawableLeft="@drawable/icon_plus_sign"
+        android:text="@string/new_character"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="start|center_vertical"
+        android:background="@android:color/transparent"
+        android:paddingStart="11dp"
+        android:paddingEnd="1dp"
+        />
 
-
-    </LinearLayout>
-
-</FrameLayout>
+    <ListView
+        android:id="@+id/CharacterList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="150dp"
+        android:paddingStart="28dp"
+        android:paddingEnd="1dp"/>
+</LinearLayout>

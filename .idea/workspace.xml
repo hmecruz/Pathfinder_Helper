@@ -20,6 +20,11 @@
           <theme>@style/Theme.Pathfinder_Helper</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/APP/app/src/main/res/layout/fragment_campiagn.xml">
+        <config>
+          <theme>@style/Theme.Pathfinder_Helper</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/APP/app/src/main/res/layout/fragment_character.xml">
         <config>
           <theme>@style/Theme.Pathfinder_Helper</theme>
@@ -76,16 +81,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="127634e3-5148-4de5-900c-fbea690543fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/APP/app/src/main/java/com/pathfinder_helper/app/Campaign.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APP/app/src/main/res/drawable/icon_plus_sign.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APP/app/src/main/res/layout/list_item_campaign.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/build.gradle.kts" afterDir="false" />
+    <list default="true" id="127634e3-5148-4de5-900c-fbea690543fc" name="Changes" comment="Progress on Campaign">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/app/src/main/java/com/pathfinder_helper/app/Campaign.kt" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/java/com/pathfinder_helper/app/Campaign.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/app/src/main/java/com/pathfinder_helper/app/Character.kt" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/java/com/pathfinder_helper/app/Character.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/app/src/main/java/com/pathfinder_helper/app/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/java/com/pathfinder_helper/app/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/app/src/main/res/drawable/icon_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/res/drawable/icon_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/app/src/main/res/layout/fragment_campiagn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/res/layout/fragment_campaign.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/app/src/main/res/layout/campaign.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/res/layout/campaign.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/app/src/main/res/layout/fragment_character.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/res/layout/fragment_character.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/app/src/main/res/layout/popup_new_campaign.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/res/layout/popup_new_campaign.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/app/src/main/res/layout/popup_new_charcter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/res/layout/popup_new_charcter.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/APP/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,6 +288,30 @@
       <option name="presentableId" value="Default" />
       <updated>1715197020022</updated>
     </task>
+    <task id="LOCAL-00001" summary="Progress on Campaign">
+      <option name="closed" value="true" />
+      <created>1715780748780</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715780748780</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Progress on Campaign" />
+    <option name="LAST_COMMIT_MESSAGE" value="Progress on Campaign" />
   </component>
 </project>

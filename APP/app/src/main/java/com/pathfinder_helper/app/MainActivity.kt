@@ -55,7 +55,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.Spells -> replaceFragment(spells())
                 R.id.Items -> replaceFragment(Items())
                 R.id.Character -> replaceFragment(Character())
-                R.id.Campaign -> replaceFragment(Campiagn())
+                //R.id.Campaign -> replaceFragment(Campiagn())
+                R.id.Campaign -> replaceFragment(Campaign())
                 else -> return@setOnItemSelectedListener false
             }
             true
