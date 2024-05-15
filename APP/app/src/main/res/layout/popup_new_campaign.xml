@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:elevation="10dp"
     app:cardCornerRadius="16dp"
-    android:backgroundTint="#9A1212">
+    android:backgroundTint="#5C5252">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:text="New Campaign"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +32,8 @@
             android:ems="10"
             android:inputType="text"
             android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
             android:text="Name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +48,8 @@
             android:gravity="start|top"
             android:inputType="textMultiLine"
             android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
             android:text="Description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
