@@ -7,24 +7,24 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.SearchView
-import com.pathfinder_helper.app.databinding.FragmentCharacterBinding
+import com.pathfinder_helper.app.databinding.CampaignBinding
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Character.newInstance] factory method to
+ * Use the [Campaign.newInstance] factory method to
  * create an instance of this fragment.
  */
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class Character : Fragment() {
+class Campaign : Fragment() {
 
     private var param1: String? = null
     private var param2: String? = null
 
     // View binding instance
-    private var _binding: FragmentCharacterBinding? = null
+    private var _binding: CampaignBinding? = null
     private val binding get() = _binding!!
 
 
@@ -39,18 +39,18 @@ class Character : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
-        _binding = FragmentCharacterBinding.inflate(inflater, container, false)
+        _binding = CampaignBinding.inflate(inflater, container, false)
         val view = binding.root
 
         // Set up button click listener
-        binding.newCharacterButton.setOnClickListener {
+        binding.newCampaignButton.setOnClickListener {
             // Show the pop-up dialog
-            val dialogFragment = MyDialogFragmentCharacetr()
-            dialogFragment.show(parentFragmentManager, "MyDialogFragmentCharacter")
+            val dialogFragment = MyDialogFragmentCampaign()
+            dialogFragment.show(parentFragmentManager, "MyDialogFragmentCampaign")
         }
 
         // Sample data
-        val campaigns = arrayOf("Branco", "Preto", "Irlandês")
+        val campaigns = arrayOf("Ancient Greek", "The Bard's Rebbutall", "No Name")
 
         // Create an adapter using custom layout
         val campaignAdapter: ArrayAdapter<String> = ArrayAdapter(
@@ -60,7 +60,7 @@ class Character : Fragment() {
         )
 
         // Set the adapter to the ListView
-        binding.CharacterList.adapter = campaignAdapter
+        binding.campaignList.adapter = campaignAdapter
 
         // Set up the SearchView
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
@@ -99,7 +99,7 @@ class Character : Fragment() {
          */
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-                Character().apply {
+                Campaign().apply {
                     arguments = Bundle().apply {
                         putString(ARG_PARAM1, param1)
                         putString(ARG_PARAM2, param2)

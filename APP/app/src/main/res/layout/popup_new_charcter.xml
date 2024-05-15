@@ -32,6 +32,7 @@
             android:ems="10"
             android:inputType="text"
             android:text="Name"
+            android:selectAllOnFocus="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -43,10 +44,12 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:inputType="text"
+            android:selectAllOnFocus="true"
             android:text="Race"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextText1" />
+
         <EditText
             android:id="@+id/editTextText3"
             android:layout_width="wrap_content"
@@ -54,6 +57,7 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:inputType="text"
+            android:selectAllOnFocus="true"
             android:text="Class"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +70,7 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:inputType="text"
+            android:selectAllOnFocus="true"
             android:text="Level"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -79,6 +84,7 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
+            android:selectAllOnFocus="true"
             android:text="Description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
