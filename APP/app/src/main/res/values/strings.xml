@@ -7,4 +7,5 @@
     <string name="camp">Campaign</string>
     <string name="navigation_drawer_open">Open</string>
     <string name="navigation_drawer_close">Close</string>
+    <string name="new_campaign">New Campaign</string>
 </resources>

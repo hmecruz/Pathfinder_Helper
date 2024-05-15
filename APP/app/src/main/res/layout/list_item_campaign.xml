@@ -1,0 +1,25 @@
+<!-- list_item_campaign.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/campaignNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/yourButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Button Text"
+        android:drawableLeft="@drawable/icon_user"
+        android:layout_gravity="end|center_vertical" />
+
+</LinearLayout>
