@@ -55,7 +55,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.Spells -> replaceFragment(spells())
                 R.id.Items -> replaceFragment(Items())
                 R.id.Character -> replaceFragment(Character())
-                //R.id.Campaign -> replaceFragment(Campiagn())
                 R.id.Campaign -> replaceFragment(Campaign())
                 else -> return@setOnItemSelectedListener false
             }
@@ -96,6 +95,8 @@ class MyDialogFragmentCampaign : DialogFragment() {
         // Set click listeners for the buttons
         okButton.setOnClickListener {
             // Handle OK button click
+            val dialogFragment = MyDialogConfirm()
+            dialogFragment.show(parentFragmentManager, "MyDialogConfirm")
             // For example, you can dismiss the dialog
             dismiss()
         }
@@ -131,6 +132,8 @@ class MyDialogFragmentCharacetr : DialogFragment() {
         // Set click listeners for the buttons
         okButton.setOnClickListener {
             // Handle OK button click
+            val dialogFragment = MyDialogConfirm()
+            dialogFragment.show(parentFragmentManager, "MyDialogConfirm")
             // For example, you can dismiss the dialog
             dismiss()
         }
@@ -140,6 +143,24 @@ class MyDialogFragmentCharacetr : DialogFragment() {
             // For example, you can dismiss the dialog
             dismiss()
         }
+
+        // Set the custom view to the dialog builder
+        builder.setView(view)
+
+        // Create and return the AlertDialog instance
+        return builder.create()
+    }
+}
+
+class MyDialogConfirm : DialogFragment() {
+
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        // Create a dialog builder
+        val builder = AlertDialog.Builder(requireContext())
+
+        // Inflate the custom layout for the dialog
+        val inflater = requireActivity().layoutInflater
+        val view = inflater.inflate(R.layout.popup_confirmed, null)
 
         // Set the custom view to the dialog builder
         builder.setView(view)
