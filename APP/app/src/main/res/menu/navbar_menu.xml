@@ -7,11 +7,12 @@
 
     <item android:title="Spells"
         android:id="@+id/Spells"
-        android:icon="@drawable/icon_add" />
+        android:iconTint="@color/white"
+        android:icon="@drawable/spell_icon" />
 
     <item android:title="Items"
         android:id="@+id/Items"
-        android:icon="@drawable/icon_add" />
+        android:icon="@drawable/icon_backpack" />
 
     <item android:title="Character"
         android:id="@+id/Character"
