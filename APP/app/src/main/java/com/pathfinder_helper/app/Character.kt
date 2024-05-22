@@ -50,7 +50,7 @@ class Character : Fragment() {
         }
 
         // Sample data
-        val campaigns = arrayOf("Branco", "Preto", "Irlandês")
+        val campaigns = arrayOf("Leonidas", "Luke Skyguy", "Mr.Anderson")
 
         // Create an adapter using custom layout
         val campaignAdapter: ArrayAdapter<String> = ArrayAdapter(

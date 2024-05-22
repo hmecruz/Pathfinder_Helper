@@ -50,7 +50,7 @@ class Campaign : Fragment() {
         }
 
         // Sample data
-        val campaigns = arrayOf("Ancient Greek", "The Bard's Rebbutall", "No Name")
+        val campaigns = arrayOf("Ancient Greek", "The Fall of an empire", "The Matrix")
 
         // Create an adapter using custom layout
         val campaignAdapter: ArrayAdapter<String> = ArrayAdapter(
